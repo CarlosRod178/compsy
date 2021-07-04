@@ -1,0 +1,102 @@
+--Intro to Search and Keyterms
+    --Search problems rely on an initial and goal state, and require the return of an optimal pathway
+        --Can come in the form of mazes, puzzles, etc. This method is used real-world in Direction giving
+        --Initial state, Actions, Transition Model, Goal Test, and Path Cost Function
+    --Agents: entities that can perceive environment and then act upon it. 
+    --States: Configuration of the agent in its environment
+        --Some snapshot of the situation which requires new moves to transition
+        --Initial states are the starting point, Goal states are the desired product
+    --Actions: Choices taken to get closer to the goal
+        --Effectively defined as a function that can only be activated given a certain state
+        --Puzzle ex. has four actions for each piece {cardinal directions}
+    --Transition Model: Description of the state acquired after performing an action
+        --Again defined as a function that takes state and action variables and produces the result
+    --State Space: the set of all possible states that can be acquired based on an initial starting point
+        --Arrows connect one state to another, can become very complex so simplified using arrowws and nodes 
+            --Ball and line chart
+    --Goal Test: Some way to determine if the current state is the ultimate goal state
+        --Some problems can have one goal state while others have multiple
+        --Additionally have multiple ways of arriving at these goals
+    --Path Cost: Numeric cost associated with taking a path
+        --Optimized path would have the lowest path cost, meaning efficient transition between initial and goal states. 
+    
+
+
+--Solving Search Problems
+    --Solution
+        --Requires a succint representation of the problem 
+            --Nodes: Data structures that track State, Parent {prior node), Action, and Path Cost
+        --Approaches start with a frontier {all of the things that could be explored} with one initial state
+        --Put the search algorithm on loop.
+            --If the frontier is ever empty, there is nothing left to explore so there is no solutino
+            --If there are nodes, remove and analyze one from the frontier.
+                --If the node is the Goal, you're done
+                --If the node is not, expand it by looking at all of the neighboring nodes acquired through actions
+        --Example: Start with A in the frontier as the initial state. Remove it and look at it's transition models to incorporate them into the frontier. 
+        --Revise solution to avoid infinite loops
+            --Uses the logic of not returning to things previously explored
+            --Places an additional step in the "Repeat" portion by adding explored nodes to a new classification
+                --If nodes are in an Explored Set, they are avoided in fronteir addition
+    --Depth-First Search
+        --Stack: Data structure that follows a "Last-in/First-out" data type, so the most recent addition is the first one explored
+        --Go deep into a search tree until you hit a dead end, and then back track to the fork in the road and try the next path
+        --The red tiles in the example show all of the paths that were taken before the right path was found
+    --Breadth-First Search
+        --Queue: Data structure that follows a "First-in/First-out" data type, so the first thing added is explored
+        --Sets up a line based on temporal seniority, takes both forks to a chunk, then goes to the next chunk away, reaching the goal
+    --Greedy Best-First Search
+        --Uninformed Search: Search strategy that uses knowledge that is NOT problem specific
+            --Includes picking any random location 
+        --Informed Search: Search strategy that uses knowledge that IS problem specific for more efficiency
+            --Includes the general idea that the solution to the maze might be in the "right" direction
+
+    --A* Search
+    
+--Adversarial Search
+    --Minimax
+    
+    --Representation of Tic-Tac-Toe AI
+    
+    --How Algorithm Works
+    
+    --Alpha-Beta Pruning
+    
+    --Depth Limited Minimax
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+**Bonus Discoveries
+    --Use (cd ..) to zoom out one directory
+    --Use (ctrl + c) to close the jupyter notebook and still use the same anaconda shell
+    --To open a png, need to use (.\name.png), it'll then open with Photos
+    --To run a file in terminal, needs to be an active .py file, can't be .ipynb
+        --Can download as a .py and use that or convert the .ipynb to a standing .py
+        --May just do the download to allow for source .ipynb to also pull html or others. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

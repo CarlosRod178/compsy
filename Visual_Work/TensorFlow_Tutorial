@@ -1,0 +1,147 @@
+--Intro to Tensors
+    --Plane Vectors
+        --Vectors as a whole are special matricies {Which are just a compact notation of equations}
+            --They act as matrices because since vectors have a directional component, they are often written as ordered pairs. This means the ordered pair form can be considered a list of numbers, which then forms the matrix
+            --Often seen as column matrices {Just one column and a set number of rows}
+            --Not to be confused with scalars which are just magnitudes, NO DIRECTIONS
+        --Machine learning vectors may seem weird; absolute length but relative direction measured against reference
+            --Usually in radians/degrees with positive counterclockwise
+        --Plane vectors are the most straightforward tensors, similar to the regular vectors we know. Just a vector written in a plane where each row corresponds to a directional component.
+            --The dimensional level tells you the amount of components/rows total 
+    --Tensors
+        --Mathematical representation of entities that can be characterized by magnitude and multiple directions 
+            --Includes plane vectors, covectors, and linear operators
+        --Represented by an array of 3R numbers {in 3D space} where R represents the rank of the tensor
+            --Scalars are still tensors, they just have rank 0 because no direction
+       --To separate, scalars = number, vectors = ordered set, tensors = array
+--Basics of TensorFlow
+    --At this point will largely 
+
+
+
+
+
+
+https://www.datacamp.com/community/tutorials/tensorflow-tutorial
+https://github.com/datacamp/datacamp-community-tutorials/blob/master/TensorFlow%20Tutorial%20For%20Beginners/TensorFlow%20Tutorial%20For%20Beginners.ipynb
+
+
+https://www.datacamp.com/community/tutorials/cnn-tensorflow-python
+
+https://www.datacamp.com/courses/deep-learning-in-python
+
+https://www.sciencedirect.com/topics/computer-science/deep-convolutional-neural-networks
+
+https://www.lewybody.org/new-research-on-hallucinations-seeking-participants/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
